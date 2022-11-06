@@ -1,13 +1,13 @@
-#cljuacexlfvgcxza
+#kbyiseltlhplxful
 
 import yagmail
 import time
 
 def sendmail():
-  for i in range(30):
+  for i in range(25):
   
-    user = 'notarealbusinessorami@gmail.com'
-    app_password = 'cljuacexlfvgcxza' # a token for gmail
+    user = 'notnigerianprince101@gmail.com'
+    app_password = 'kbyiseltlhplxful' # a token for gmail
     to = ['mables1026@gmail.com', 'michaelhorvath896@gmail.com'] #Any targets go here
   
     subject = 'ATTENTION!!!' + '------------------------------------' + str(time.time()) #This ensures every email is fresh and new, not a chain

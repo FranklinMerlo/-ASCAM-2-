@@ -77,9 +77,9 @@ function sendMessage(){
     messageArea.remove();
     
     //doughnut remover 
-    while (1) {
-      ajaxPostRequest("/writeFile", toSend, renderChat);
-    }
-    //ajaxPostRequest("/writeFile", toSend, renderChat);
+    //while (1) {
+      //ajaxPostRequest("/writeFile", toSend, renderChat);
+    //}
+    ajaxPostRequest("/writeFile", toSend, renderChat);
   }
 }

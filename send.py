@@ -1,15 +1,13 @@
-#tpdgpzbbkvjybhby
+#cljuacexlfvgcxza
 
 import yagmail
 import time
 
-coolcount = 0
-
 def sendmail():
-  for i in range(10):
+  for i in range(20):
   
-    user = 'realbusinessproposal@gmail.com'
-    app_password = 'tpdgpzbbkvjybhby' # a token for gmail
+    user = 'notarealbusinessorami@gmail.com'
+    app_password = 'cljuacexlfvgcxza' # a token for gmail
     to = ['mables1026@gmail.com', 'michaelhorvath896@gmail.com', 'mattdcir@gmail.com', 'fjmerlo@buffalo.edu']
   
     subject = 'ATTENTION!!!' + '------------------------------------' + str(time.time())

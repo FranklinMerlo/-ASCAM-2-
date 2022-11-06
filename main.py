@@ -11,7 +11,7 @@ def normal():
   return bottle.static_file("index.html", root=".")
 
 @bottle.route("/styles.css")
-def normal():
+def styles():
   return bottle.static_file("styles.css", root=".")
 
 

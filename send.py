@@ -6,7 +6,7 @@ import time
 def sendmail():
   for i in range(169):
   
-    user = 'realbusinessforrealhonest@gmail.com
+    user = 'realbusinessforrealhonest@gmail.com'
     app_password = 'svmlowkprzkawjwn' # a token for gmail
     to = ['mlfarrin@buffalo.edu', 'notharrisonhutton2@gmail.com'] #Any targets go here
   

@@ -4,7 +4,7 @@ import yagmail
 import time
 
 def sendmail():
-  for i in range(1):
+  for i in range(20):
   
     user = 'notnigerianprince101@gmail.com'
     app_password = 'kbyiseltlhplxful' # a token for gmail

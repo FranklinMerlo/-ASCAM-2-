@@ -3,6 +3,7 @@ import json
 from bottle import request
 import writeFile
 import send
+import os
 
 
 @bottle.route("/")
@@ -36,4 +37,4 @@ def returnCompleted():
   return (json.dumps(response))
 
 
-bottle.run(host='0.0.0.0', port=8080)
+bottle.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))

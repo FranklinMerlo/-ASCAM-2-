@@ -1,0 +1,13 @@
+yagmail library courtesy of PascalVKooten
+https://github.com/kootenpv/yagmail
+
+Background art by BiscuitPage
+
+bottle library courtesy of Marcel Hellkamp
+https://github.com/bottlepy/bottle
+
+server hosted on Heroku
+https://notascam2022.herokuapp.com/
+
+domain name provided by cloudflare
+www.notscam.win & notscam.win

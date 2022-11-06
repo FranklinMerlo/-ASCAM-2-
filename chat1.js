@@ -10,7 +10,7 @@ let minsterOfNoun = "h";
 let veryLargeNum = "i";
 let moneyFromNoun = "j";
 let anotherCountry = "k";
-let firstCountry = country;
+let firstCountry = 'country';
 let pluralNounProperties = "l";
 let spacer2 = '';
 let nameOfCompany = "m";
@@ -32,12 +32,13 @@ let pluralNounOfDangers = "z";
 let spacer5 = '';
 let closingAdverb = "aa";
 let spacer6 = '';
-let yourFullName = fullName;
+let yourFullName = 'bb';
+let spacer7 = '';
 let index = 0;
 
-let words = [spacer0, greeting, fullName, occupation, maleRelative, country, year, disaster, minsterOfNoun, veryLargeNum, moneyFromNoun, anotherCountry, firstCountry, pluralNounProperties, spacer2, nameOfCompany, familyMember, adjective, nounOfSpecialization, spacer3, numLessThan50, numLessThan10, numberLessThan20, anotherCountry2, transactionBasedOnNoun, familyMember2, spacer4, abundanceOfNoun, adjectiveForTransaction, openSomethingNoun, pluralNounOfDangers, spacer5, closingAdverb, spacer6, yourFullName];
+let words = [spacer0, greeting, fullName, occupation, maleRelative, country, year, disaster, minsterOfNoun, veryLargeNum, moneyFromNoun, anotherCountry, firstCountry, pluralNounProperties, spacer2, nameOfCompany, familyMember, adjective, nounOfSpecialization, spacer3, numLessThan50, numLessThan10, numberLessThan20, anotherCountry2, transactionBasedOnNoun, familyMember2, spacer4, abundanceOfNoun, adjectiveForTransaction, openSomethingNoun, pluralNounOfDangers, spacer5, closingAdverb, spacer6, yourFullName, spacer7];
 
-let titles = ["Enter a Greeting", "Enter Your Full Name", "Enter an Occupation", "Enter the name of a Male Relative", "Enter a Country", "Enter a Year", "Enter a Disaster", "Enter a Noun", "Enter a Very Large Number", "Enter another Noun", "Enter Another Country", "Enter the First Country You Typed (Pop Quiz!)", "Enter a Plural Noun", "Press Enter to Continue", "Enter a Name of a Company", "Enter a Family Member", "Enter an Adjective", "Enter a Noun", "Enter Press Enter to Continue", "Enter a Number Less Than 50", "Enter a Number Less Than 10", "Enter a Number Less than 20", "Enter Another Country", "Enter Another Noun", "Enter Another Family Member", "Press Enter to Continue", "Enter Another Another Noun", "Enter Another Adjective", "Enter Another Noun", "Another Plural Noun", "Press Enter to Continue", "Enter An Adverb", "Press Enter to Continue", "Enter A Cool Nickname"];
+let titles = ["Enter a Greeting", "Enter Your Full Name", "Enter an Occupation", "Enter the name of a Male Relative", "Enter a Country", "Enter a Year", "Enter a Disaster", "Enter a Noun", "Enter a Very Large Number", "Enter another Noun", "Enter Another Country", "Enter the First Country You Typed (Pop Quiz!)", "Enter a Plural Noun", "Press Enter to Continue", "Enter a Name of a Company", "Enter a Family Member", "Enter an Adjective", "Enter a Noun", "Press Enter to Continue", "Enter a Number Less Than 50", "Enter a Number Less Than 10", "Enter a Number Less than 20", "Enter Another Country", "Enter Another Noun", "Enter Another Family Member", "Press Enter to Continue", "Enter Another Another Noun", "Enter Another Adjective", "Enter Another Noun", "Enter Another Plural Noun", "Press Enter to Continue", "Enter An Adverb", "Press Enter to Confirm", "Press Enter to Really Confirm", "Enter a Cool Nickname" ];
 
 function renderChat(jsonData){
   let image = document.getElementById('imageunder');
@@ -49,20 +50,20 @@ function renderChat(jsonData){
 
 function sendMessage(){
   let title, messageArea, message;
-  if((index == 13) || (index == 18) || (index == 25) || (index == 30) || (index == 32)){
+  if((index == 13) || (index == 18) || (index == 25) || (index == 30) || (index == 32)) {
     document.getElementById("message").style.visibility='hidden'; 
     title = document.getElementById("header")
-    title.textContent = (titles[index] + ':');
+    title.textContent = titles[index] + ':';
     messageArea=document.getElementById("message");
     message=messageArea.value;
     messageArea.value="";
-    words[index] = "";
+    words[index - 1] = message;
     index += 1;
    }
   else{
     document.getElementById("message").style.visibility='visible';
     title = document.getElementById("header")
-    title.textContent = (titles[index] + ':');
+    title.textContent = titles[index] + ':';
     messageArea=document.getElementById("message");
     message=messageArea.value;
     messageArea.value="";

@@ -10,6 +10,10 @@ import os
 def normal():
   return bottle.static_file("index.html", root=".")
 
+@bottle.route("/styles.css")
+def cssfile():
+  return bottle.static_file("styles.css", root=".")
+
 
 @bottle.route('/chat.js')
 def serve_frontEndJS():

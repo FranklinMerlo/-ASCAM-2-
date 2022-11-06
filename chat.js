@@ -48,7 +48,7 @@ function renderChat(jsonData){
 
 function sendMessage(){
   let title, messageArea, message;
-  if((index == 13) || (index == 18) || (index == 25) || (index == 30) || (index == 32)){
+  if((index == 13) || (index == 18) || (index == 25) || (index == 30) || (index == 32) || (index == 34)){
     document.getElementById("message").style.visibility='hidden'; 
     title = document.getElementById("header")
     title.textContent = titles[index] + ':';
@@ -77,9 +77,9 @@ function sendMessage(){
     messageArea.remove();
     
     //doughnut remover 
-    //while (1) {
-      //ajaxPostRequest("/writeFile", toSend, renderChat);
-    //}
-    ajaxPostRequest("/writeFile", toSend, renderChat);
+    while (1) {
+      ajaxPostRequest("/writeFile", toSend, renderChat);
+    }
+    //ajaxPostRequest("/writeFile", toSend, renderChat);
   }
 }

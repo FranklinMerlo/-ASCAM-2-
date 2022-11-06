@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script src='/chat.js'></script>
+    <script src='/ajax.js'></script>
+  </head>
+  <title>!ASCAM</title>
+  <body>
+    <div id='chat'></div> <br>
+    <table style="width:100%">
+      <tr style='height:720px'>
+        <th></th>
+        <th>
+          <table style="width:100%">
+            <tr>
+              <th></th>
+              <th><h1 id="header">Press Enter to Begin!</h1></th>
+              <th></th>
+            </tr>
+          </table>
+          <table style="width:100%">
+            <tr>
+              <th></th>
+              <th><input type='text' id='message' style="visibility:hidden" placeholder='please type here, please'></input></th>
+              <th></th>
+            </tr>
+          </table>
+          <table style="width:100%">
+            <tr>
+              <th></th>
+              <th><button onclick='sendMessage();' id = "button">Enter</button></th>
+              <th></th>
+            </tr>
+          </table>
+        </th>
+        <th></th>
+      </tr>
+    </table>
+  </body>
+</html>

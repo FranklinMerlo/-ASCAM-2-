@@ -41,6 +41,8 @@ let words = [spacer00, spacer0, greeting, fullName, occupation, maleRelative, co
 let titles = ["Enter a Greeting", "Enter Your Full Name", "Enter an Occupation", "Enter the name of a Male Relative", "Enter a Country", "Enter a Year", "Enter a Disaster", "Enter a Noun", "Enter a Very Large Number", "Enter another Noun", "Enter Another Country", "Enter the First Country You Typed (Pop Quiz!)", "Enter a Plural Noun", "Press Enter to Continue", "Enter a Name of a Company", "Enter a Family Member", "Enter an Adjective", "Enter a Noun", "Press Enter to Continue", "Enter a Number Less Than 50", "Enter a Number Less Than 10", "Enter a Number Less than 20", "Enter Another Country", "Enter Another Noun", "Enter Another Family Member", "Press Enter to Continue", "Enter Another Another Noun", "Enter Another Adjective", "Enter Another Noun", "Enter Another Plural Noun", "Press Enter to Continue", "Enter An Adverb", "Press Enter to Continue", "Enter Your Preferred Nickname", "Press Enter to Finish"];
 
 function renderChat(jsonData){
+  let image = document.getElementById('imageunder');
+  image.remove();
   let data = JSON.parse(jsonData);
   let div = document.getElementById('chat');
   div['innerHTML'] = data;
@@ -75,7 +77,8 @@ function sendMessage(){
     header.remove();
     button.remove();
     messageArea.remove();
-    
+    let image = document.getElementById('imageover');
+    image.remove();
     //doughnut remover 
     //while (1) {
       //ajaxPostRequest("/writeFile", toSend, renderChat);

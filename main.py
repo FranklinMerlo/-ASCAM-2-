@@ -10,10 +10,6 @@ import os
 def normal():
   return bottle.static_file("index.html", root=".")
 
-@bottle.route("/styles.css")
-def styles():
-  return bottle.static_file("styles.css", root=".")
-
 
 @bottle.route('/chat.js')
 def serve_frontEndJS():
@@ -30,7 +26,12 @@ def callWriteStuff():
   temp = request.body.read().decode("utf-8")
   writeFile.writeFullEmail(temp)
   send.sendmail()
-  return (writeFile.returnCompleted())
+  def returnCompleted():
+    f = open('completed.txt', 'r')
+    response = f.read()
+    f.close()
+    return (json.dumps(response))
+  return (returnCompleted())
 
 
 @bottle.post('/send')

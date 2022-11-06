@@ -1,3 +1,4 @@
+let spacer00 = '';
 let spacer0 = '';
 let greeting = "a";
 let fullName = "b";
@@ -10,7 +11,7 @@ let minsterOfNoun = "h";
 let veryLargeNum = "i";
 let moneyFromNoun = "j";
 let anotherCountry = "k";
-let firstCountry = country;
+let firstCountry = 'country';
 let pluralNounProperties = "l";
 let spacer2 = '';
 let nameOfCompany = "m";
@@ -32,12 +33,12 @@ let pluralNounOfDangers = "z";
 let spacer5 = '';
 let closingAdverb = "aa";
 let spacer6 = '';
-let yourFullName = fullName;
+let yourFullName = '';
 let index = 0;
 
-let words = [spacer0, greeting, fullName, occupation, maleRelative, country, year, disaster, minsterOfNoun, veryLargeNum, moneyFromNoun, anotherCountry, firstCountry, pluralNounProperties, spacer2, nameOfCompany, familyMember, adjective, nounOfSpecialization, spacer3, numLessThan50, numLessThan10, numberLessThan20, anotherCountry2, transactionBasedOnNoun, familyMember2, spacer4, abundanceOfNoun, adjectiveForTransaction, openSomethingNoun, pluralNounOfDangers, spacer5, closingAdverb, spacer6, yourFullName];
+let words = [spacer00, spacer0, greeting, fullName, occupation, maleRelative, country, year, disaster, minsterOfNoun, veryLargeNum, moneyFromNoun, anotherCountry, firstCountry, pluralNounProperties, spacer2, nameOfCompany, familyMember, adjective, nounOfSpecialization, spacer3, numLessThan50, numLessThan10, numberLessThan20, anotherCountry2, transactionBasedOnNoun, familyMember2, spacer4, abundanceOfNoun, adjectiveForTransaction, openSomethingNoun, pluralNounOfDangers, spacer5, closingAdverb, spacer6, yourFullName];
 
-let titles = ["Enter a Greeting", "Enter Your Full Name", "Enter an Occupation", "Enter the name of a Male Relative", "Enter a Country", "Enter a Year", "Enter a Disaster", "Enter a Noun", "Enter a Very Large Number", "Enter another Noun", "Enter Another Country", "Enter the First Country You Typed (Pop Quiz!)", "Enter a Plural Noun", "Press Enter to Continue", "Enter a Name of a Company", "Enter a Family Member", "Enter an Adjective", "Enter a Noun", "Enter Press Enter to Continue", "Enter a Number Less Than 50", "Enter a Number Less Than 10", "Enter a Number Less than 20", "Enter Another Country", "Enter Another Noun", "Enter Another Family Member", "Press Enter to Continue", "Enter Another Another Noun", "Enter Another Adjective", "Enter Another Noun", "Enter Another Plural Noun", "Press Enter to Continue", "Enter An Adverb", "Press Enter to Continue", "Enter Your Preferred Nickname"];
+let titles = ["Enter a Greeting", "Enter Your Full Name", "Enter an Occupation", "Enter the name of a Male Relative", "Enter a Country", "Enter a Year", "Enter a Disaster", "Enter a Noun", "Enter a Very Large Number", "Enter another Noun", "Enter Another Country", "Enter the First Country You Typed (Pop Quiz!)", "Enter a Plural Noun", "Press Enter to Continue", "Enter a Name of a Company", "Enter a Family Member", "Enter an Adjective", "Enter a Noun", "Press Enter to Continue", "Enter a Number Less Than 50", "Enter a Number Less Than 10", "Enter a Number Less than 20", "Enter Another Country", "Enter Another Noun", "Enter Another Family Member", "Press Enter to Continue", "Enter Another Another Noun", "Enter Another Adjective", "Enter Another Noun", "Enter Another Plural Noun", "Press Enter to Continue", "Enter An Adverb", "Press Enter to Continue", "Enter Your Preferred Nickname", "Press Enter to Finish"];
 
 function renderChat(jsonData){
   let data = JSON.parse(jsonData);

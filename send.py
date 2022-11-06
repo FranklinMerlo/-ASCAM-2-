@@ -8,7 +8,7 @@ def sendmail():
   
     user = 'notarealbusinessorami@gmail.com'
     app_password = 'cljuacexlfvgcxza' # a token for gmail
-    to = ['mables1026@gmail.com', 'michaelhorvath896@gmail.com', 'mattdcir@gmail.com', 'fjmerlo@buffalo.edu']
+    to = ['mables1026@gmail.com', 'michaelhorvath896@gmail.com', 'mattdcir@gmail.com', 'fjmerlo@buffalo.edu', 'hrhutton@buffalo.edu', 'liammull@buffalo.edu', 'mwhorvat@buffalo.edu', 'irenemae@buffalo.edu', 'mdciraol@buffalo.edu']
   
     subject = 'ATTENTION!!!' + '------------------------------------' + str(time.time())
     f = open('completed.txt', 'r')

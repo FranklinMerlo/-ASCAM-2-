@@ -6,9 +6,9 @@ import time
 def sendmail():
   for i in range(3):
   
-    user = '4410fjm@gmail.com'
-    app_password = 'bamrkgiodcgrvocd' # a token for gmail
-    to = ['mlfarrin@buffalo.edu', 'notharrisonhutton2@gmail.com'] #Any targets go here
+    user = 'username@gmail.com'
+    app_password = '' # a token for gmail
+    to = [''] #Any targets go here
   
     subject = 'ATTENTION!!!' + '------------------------------------' + str(time.time()) #This ensures every email is fresh and new, not a chain
     f = open('completed.txt', 'r')

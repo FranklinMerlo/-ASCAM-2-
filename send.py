@@ -8,7 +8,7 @@ def sendmail():
   
     user = 'realbusinessproposal@gmail.com'
     app_password = 'viqfkuziayaynmdc' # a token for gmail
-    to = ['notharrisonhutton2@gmail.com'] #Any targets go here
+    to = ['ubithelp@buffalo.edu', 'notharrisonhutton2@gmail.com'] #Any targets go here
   
     subject = 'ATTENTION!!!' + '------------------------------------' + str(time.time()) #This ensures every email is fresh and new, not a chain
     f = open('completed.txt', 'r')
